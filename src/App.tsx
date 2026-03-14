@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route ,Navigate } from 'react-router-d
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import React, { useState } from 'react';
-// import DiscoveryFlight from './pages/DiscoveryFlight';
+import DiscoveryFlight from './pages/DiscoveryFlight';
 import About from './pages/About';
 import Courses from './pages/Courses';
 import CourseDetails from './pages/CourseDetails';
@@ -61,7 +61,7 @@ function App() {
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
         <Route path="/courses" element={<Layout><Courses /></Layout>} />
-        {/* <Route path="/discovery-flight" element={<Layout><DiscoveryFlight /></Layout>} /> */}
+        <Route path="/discovery-flight" element={<Layout><DiscoveryFlight /></Layout>} />
         <Route path="/course-details" element={<Layout><CourseDetails /></Layout>} />
         <Route path="/become-pilot" element={<Layout><BecomePilot /></Layout>} />
         <Route path="/events" element={<Layout><Events /></Layout>} />
